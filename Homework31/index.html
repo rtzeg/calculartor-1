@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="btns-wrapper">
+        <button class="btn_1 btn">Вызвать форму 1</button>
+        <button class="btn_2 btn">Вызвать форму 2</button>
+        <button class="btn_3 btn">Вызвать форму 3</button>
+        <button class="btn_1_2 btn">Вызвать форму 1 и 2</button>
+        <button class="btn_1_3 btn">Вызвать форму 1 и 3</button>
+    </div>
+    <div class="form_wrapper">
+        <form class="form non_active form_1">
+            <div class="form-content">
+                <h1>Форма 1</h1>
+                <input type="text" placeholder="Имя" name="userName" >
+                <input type="text" placeholder="Номер" name="userPhone" >
+                <button class="remove_form">Подтвердить</button>
+            </div>
+        </form>
+
+        <form class="form non_active form_2">
+            <div class="form-content">
+                <h1>Форма 2</h1>
+                <input type="text" placeholder="Имя" name="userName" >
+                <input type="text" placeholder="Номер" name="userPhone" >
+                <button class="remove_form">Подтвердить</button>
+            </div>
+        </form>
+
+        <form class="form non_active form_3">
+            <div class="form-content">
+                <h1>Форма 3</h1>
+                <input type="text" placeholder="Имя" name="userName" >
+                <input type="text" placeholder="Номер" name="userPhone" >
+                <button class="remove_form">Подтвердить</button>
+            </div>
+        </form>
+    </div>
+    <button class="remove_all_forms">Удалить Формы</button>
+    <script src="./script.js"></script>
+</body>
+</html>

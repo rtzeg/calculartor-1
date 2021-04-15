@@ -1,0 +1,131 @@
+<head>
+   <link rel="stylesheet" href="./style.css">
+   <title>WePay - Бесплатный онлайн банкинг</title>
+</head>
+
+<main>
+   <!-- Область PIN-кода -->
+   <div class="pin">
+      <h1>****</h1>
+      <div class="numbers">
+         <div class="pin-number">1</div>
+         <div class="pin-number">2</div>
+         <div class="pin-number">3</div>
+         <div class="pin-number">4</div>
+         <div class="pin-number">5</div>
+         <div class="pin-number">6</div>
+         <div class="pin-number">7</div>
+         <div class="pin-number">8</div>
+         <div class="pin-number">9</div>
+         <div class="pin-number">0</div>
+         <div class="sign-in">Вход</div>
+         <div class="remove">Стереть</div>
+      </div> 
+   </div>
+
+   <!-- blurred background el -->
+   <div class="modal_bg"></div>
+   <!-- Widgets -->
+   <button class="show_form">Добавить карту</button>
+   <!-- form to add -->
+   <form class="modal_animate add_form">
+      <h2>Добавить карту</h2>
+      <div class="data">
+         <input value="Main" name="name"  type="text" placeholder="Имя карты">
+         <input value="4278111111111111" name="number" type="text" placeholder="Номер карты">
+         <input value="10000" name="balance" type="text" placeholder="Баланс карты">
+         <input value="05" name="month" type="text" placeholder="Месяц" required>
+         <input value="11" name="year" type="text" placeholder="Год" required>
+      </div>
+      <button class="remove_form">Добавить</button>
+   </form>
+   <form class="modal_animate edit_form">
+      <h2>Изменить карту</h2>
+      <div class="data">
+         <input value="Main" name="name" id="name" type="text" placeholder="Имя карты">
+         <input value="4278111111111111" id="number" name="number" type="text" placeholder="Номер карты">
+         <input value="10000" name="balance" id="balance" type="text" placeholder="Баланс карты">
+         <input value="05" name="month" type="text" id="month" placeholder="Месяц" required>
+         <input value="11" name="year" type="text" id="year" placeholder="Год" required>
+      </div>
+      <button class="remove_form edit_form" id="but">Изменить</button>
+   </form>
+
+
+   <!-- transacations -->
+   <form class="modal_animate transaction-form">
+      <h2>Оплатить транзакцию</h2>
+      <div class="form-data-transactions">
+         <span>Выберите функцию ниже:</span>
+         <select name="service" class="select1 select_service">
+            <option value="Квартплата">Выберите услугу</option>
+         </select>
+         <select name="card" class="select1 select_cards">
+            <option value="Карта">Выберите карту</option>
+         </select>
+         <br>
+         <br>
+         <input type="text" name="money" placeholder="Укажите сумму" class="inp" required>
+         <br>
+         <br>
+         <button class="trans-btn">Оплатить</button>
+      </div>
+   </form>
+
+
+   <div class="home-page">
+      <div class="cards"></div>
+      <div class="services">
+         <div class="services_item">
+            <div class="services_item_logo">
+               <div class="img"></div>
+            </div>
+            <div class="services_item_price">
+               <h1>Steam</h1>
+               <span>$100</span>
+            </div>
+         </div>
+      </div>
+      <div class="transacations">
+         <div class="head-title">
+            <h3>Today, 20 sep</h3>
+            <h3>400$</h3>
+         </div>
+         <div class="transactions-list"></div>
+      </div>
+      <div class="menu">
+         <div class="menu_item">
+            <img src="./img/chat.svg" alt="">
+            <div class="title">
+               <p>Чат</p>
+            </div>
+         </div>
+         <div class="menu_item menu_item_payment">
+            <img src="./img/transaction.svg" alt="">
+            <div class="title">
+               <p>Оплата</p>
+            </div>
+         </div>
+         <div class="menu_item">
+            <img src="./img/services.svg" alt="">
+            <div class="title">
+               <p>Сервисы</p>
+            </div>
+         </div>
+         <div class="menu_item">
+            <img src="./img/support.svg" alt="">
+            <div class="title">
+               <p>Поддержка</p>
+            </div>
+         </div>
+         <div class="menu_item">
+            <img src="./img/settings.svg" alt="">
+            <div class="title">
+               <p>Настройки</p>
+            </div>
+         </div>
+      </div>
+   </div>
+</main>
+
+<script src="./script.js"></script>

@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    text-decoration: none;
+    outline: none;
+    padding: 0;
+}
+
+.active {
+    display: flex!important;
+}
+
+.btns-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    background-color: blue;
+    border: none;
+    color: white;
+    font-weight: bold;
+    height: 60px;
+    width: 200px;
+    font-size: 17px;
+    transition: 280ms;
+    cursor: pointer;
+}
+
+.remove_form {
+    background-color: blue;
+    border: none;
+    color: white;
+    font-weight: bold;
+    height: 60px;
+    width: 200px;
+    font-size: 17px;
+    transition: 280ms;
+    cursor: pointer;
+}
+
+
+
+.btn:hover {
+    background-color: red;
+}
+
+.remove_form:hover {
+    background-color: red;
+}
+
+
+
+.form_wrapper {
+    display: none;
+    position: absolute;
+    top: 0%;
+    height: 100vh;
+    background-color: #00000050;
+    width: 100%;
+}
+.form {
+    width: 300px;
+    height: 200px;
+    align-items: center;
+    text-align: center;
+    border: 2px solid black;
+    margin: 200px auto;
+    box-shadow: 0 9px 9px rgba(0, 0, 0, .5);
+    background-color: white;
+}
+
+.non_active {
+    display: none;
+}
+
+.form button {
+    width: 180px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.form input {
+    width: 200px;
+    height: 26px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+    transition: 300ms;
+    cursor: pointer;
+}
+
+.form input:hover {
+    border: 2px solid blue;
+}
+
+.form input::placeholder {
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+.remove_all_forms {
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    padding: 20px 30px;
+    border-radius: 10px;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-weight: bolder;
+    border: 2px solid black;
+  }
+.remove_all_forms:hover {
+    background-position: right center;
+}
+
+.form_1 {
+    position: absolute;
+    top: -10%;
+    left: 20%;
+}
+.form_2 {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+}
+.form_3 {
+    position: absolute;
+    top: 5%;
+    left: 45%;
+}
